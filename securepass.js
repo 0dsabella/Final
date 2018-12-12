@@ -21,7 +21,7 @@ function upperCaseCheck(password){
   for(let i = 0; i < password.length; i++){
 
     if(password.CharCodeAt(i) >= 65 && password.CharCodeAt(i) <= 90){
-      return true
+      return true;
     }
   }
   return false;
@@ -37,13 +37,11 @@ function lowerCaseCheck(password){
 
   for(let i = 0; i < password.length; i++){
 
-    if(password.CharCodeAt(i) >= String.fromCharCode(97) && (password.CharCodeAt(i) <= String.fromCharCode(122))){
+    if(password.CharCodeAt(i) >= 97 && password.CharCodeAt(i) <= 122){
       return true;
     }
-    else if(password.CharCodeAt(i) < String.fromCharCode(97) || (password.CharCodeAt(i) > String.fromCharCode(122))){
-      return false;
-    }
-  } 
+  }
+  return false;
 }
 
 
@@ -58,13 +56,11 @@ function numberCheck(password){
 
   for(let i = 0; i < password.length; i++){
 
-    if(password.CharCodeAt(i) >= String.fromCharCode(48) && (password.CharCodeAt(i) <= String.fromCharCode(57))){
-      return true
+    if(password.CharCodeAt(i) >= 48 && password.CharCodeAt(i) <= 57){
+      return true;
     }
-    else if(password.CharCodeAt(i) < String.fromCharCode(48) || (password.CharCodeAt(i) > String.fromCharCode(57))){
-      return false;
-    }
-  } 
+  }
+return false;
 }
 
 
@@ -78,19 +74,19 @@ function specialCheck(check){
 
   for(let i = 0; i < password.length; i++){
 
-    if(password.CharCodeAt(i) >= String.fromCharCode(33) && (password.CharCodeAt(i) <= String.fromCharCode(47))){
-      return true
+    if(password.CharCodeAt(i) >= 33 && password.CharCodeAt(i) <= 47){
+      return true;
     }
-    if(password.CharCodeAt(i) >= String.fromCharCode(58) && (password.CharCodeAt(i) <= String.fromCharCode(64))){
-      return true
+    if(password.CharCodeAt(i) >= 58 && password.CharCodeAt(i) <= 64){
+      return true;
     }
-    if(password.CharCodeAt(i) >= String.fromCharCode(91) && (password.CharCodeAt(i) <= String.fromCharCode(96))){
-      return true
+    if(password.CharCodeAt(i) >= 91 && password.CharCodeAt(i) <= 96){
+      return true;
     }
-    if(password.CharCodeAt(i) >= String.fromCharCode(125) && (password.CharCodeAt(i) <= String.fromCharCode(127))){
-      return true
+    if(password.CharCodeAt(i) >= 125 && password.CharCodeAt(i) <= 127){
+      return true;
     }
-    else if(password.CharCodeAt(i) < String.fromCharCode(65) || (password.CharCodeAt(i) > String.fromCharCode(90))){
+    else if(password.CharCodeAt(i) < 65 || password.CharCodeAt(i) >  90){
       return false;
     }
   } 
@@ -106,7 +102,7 @@ function specialCheck(check){
 
 
 function passedAllChecks(){
-
+  if
 }
 
 
